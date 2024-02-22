@@ -1,0 +1,34 @@
+.tob-row-for-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.btn-hp {
+    background: #f5f7fb !important;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #80808021, -1px -1px 5px #80808021;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+form#form_category_hp input.form-control {
+    height: 40px;
+    margin-top: 10px;
+}
+form#form_category_hp label {
+    font-weight: 500;
+}
+form#form_category_hp input.form-control{
+    height: 40px;
+    margin-top: 10px;
+    background: #f5f7fb;
+    border: none;
+    box-shadow: 1px 1px 5px #80808021, -1px -1px 5px #80808021;
+}
+form#form_category_hp textarea.form-control {
+    margin-top: 10px;
+    background: #f5f7fb;
+    border: none;
+    box-shadow: 1px 1px 5px #80808021, -1px -1px 5px #80808021;
+}
