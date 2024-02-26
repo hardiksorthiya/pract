@@ -32,7 +32,7 @@
                             <td class="d-none d-xl-table-cell">
                             <a href="{{url('admin/attributes/'.$attri->id.'/add')}}" class="btn btn-success">Value</a>    
                             <a href="{{url('admin/attributes/'.$attri->id.'/edit')}}" class="btn btn-success">Edit</a>    
-                            <a href="#" wire:click="deleteCategory{{$attri->id}}" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deletecat" >Delete</a>    
+                            <a href="{{url('admin/attributes/'.$attri->id.'/delete')}}"  class="btn btn-danger">Delete</a>    
                             </td>
                         </tr>
                     </tbody>

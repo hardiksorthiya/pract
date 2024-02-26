@@ -46,13 +46,18 @@ class ProductAttributesController extends Controller
             return redirect('admin/attributes')->with('message','Attributes Updated Successfully');
             }
 
-            
-
             public function add($attri){
 
                 $attributes =  ProductAttributes::find($attri);
                 return view('backend.admin.product.attributesvalue.create', ['attributes'=>$attributes,],compact('attributes'));
             }
+
+             // delete
+         public function delete(ProductAttributes  $request,$attri){
+            $attributes = ProductAttributes::find($attri); 
+            $attributes->delete();
+            return redirect('admin/attributes')->with('message','Category Deleted Successfully');
+         }
             }
    
 
