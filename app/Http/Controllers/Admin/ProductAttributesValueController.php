@@ -27,12 +27,8 @@ class ProductAttributesValueController extends Controller
             $attributes_value->description = $validatedData['description'];
             $attributes_value->slug = Str::slug($validatedData['slug']);
             $attributes_value->save(); 
-            return redirect('admin/attributes')->with('message','Attribute Added Successfully');
+            return view('admin/attributes')->with('message','Attribute Added Successfully');
             }
-        
-             
-    
-             
-    }
+        }
     
 
